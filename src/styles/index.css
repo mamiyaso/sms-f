@@ -1,0 +1,156 @@
+/* Genel stiller */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Header stili */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Sidebar stili */
+  aside {
+    background-color: #f8f8f8;
+    width: 200px;
+    padding: 1rem;
+  }
+  
+  aside nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  aside nav ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  aside nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Footer stili */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Form stilleri */
+  .student-form, .teacher-form, .course-form {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Tablo stilleri */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  /* Sayfa başlıkları */
+  h1, h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive tasarım için medya sorguları */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+  
+    aside {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
